@@ -2,8 +2,7 @@ import React, {useState, useEffect} from 'react';
 import EastsideTrail from './eastside-trail';
 import EastsideTrailMobile from './eastside-trail-mobile';
 
-
-const EastsideTrailContainer = () => {
+const EastsideTrailContainer = (props) => {
     const [width, setWidth] = useState(window.innerWidth);
 
     const handleWindowSizeChange = () => {
@@ -19,7 +18,7 @@ const EastsideTrailContainer = () => {
     const isMobile = width <= 850;
 
     return (
-        isMobile ? <EastsideTrailMobile/> : <EastsideTrail/>
+        isMobile ? <EastsideTrailMobile venues={props.venues} /> : <EastsideTrail venues={props.venues} />
     );
 };
 

@@ -1,0 +1,106 @@
+
+
+
+/*.nav {*/
+/*    background: #63D471;*/
+/*    height: 85px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 0.2rem calc((100vw - 1000px) / 2);*/
+/*    z-index: 12;*/
+/*}*/
+
+/*.bars {*/
+/*    display: none;*/
+/*    color: #808080;*/
+/*}*/
+
+/*@media screen and (max-width: 768px) {*/
+/*    .bars {*/
+/*        display: block;*/
+/*        position: absolute;*/
+/*        top: 0;*/
+/*        right: 0;*/
+/*        transform: translate(-100%, 75%);*/
+/*        font-size: 1.8rem;*/
+/*        cursor: pointer;*/
+/*    }*/
+/*}*/
+
+/*.navMenu {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-right: -24px;*/
+/*}*/
+
+/*@media screen and (max-width: 768px) {*/
+/*    .navMenu {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*.navLink {*/
+/*    color: #808080;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    text-decoration: none;*/
+/*    padding: 0 1rem;*/
+/*    height: 100%;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.navLink.active {*/
+/*    color: #000000;*/
+/*}*/
+
+/*.navBtn {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-right: 24px;*/
+/*}*/
+
+/*@media screen and (max-width: 768px) {*/
+/*    .navBtn {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*.navBtnLink {*/
+/*    border-radius: 4px;*/
+/*    background: #808080;*/
+/*    padding: 10px 22px;*/
+/*    color: #000000;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    transition: all 0.2s ease-in-out;*/
+/*    text-decoration: none;*/
+/*    !* Second Nav *!*/
+/*    !*margin-left: 24px;*!*/
+/*}*/
+
+/*.navBtnLink:hover {*/
+/*    transition: all 0.2s ease-in-out;*/
+/*    background: #fff;*/
+/*    color: #808080;*/
+/*}*/
+
+/*.navBtnLink {*/
+/*    border-radius: 4px;*/
+/*    background: #808080;*/
+/*    padding: 10px 22px;*/
+/*    color: #000000;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    transition: all 0.2s ease-in-out;*/
+/*    text-decoration: none;*/
+/*    !* Second Nav *!*/
+/*    !*margin-left: 24px;*!*/
+/*}*/
+
+/*.navBtnLink:hover {*/
+/*    transition: all 0.2s ease-in-out;*/
+/*    background: #fff;*/
+/*    color: #808080;*/
+/*}*/

@@ -1,5 +1,8 @@
-{
+export const venues = {
   type: 'FeatureCollection',
+  longitude: -84.3593842,
+  latitude: 33.7636161,
+  zoom: 14,
   features: [
     {
       type: 'Feature',
@@ -28,4 +31,4 @@
       }
     }
   ]
-}
+};
