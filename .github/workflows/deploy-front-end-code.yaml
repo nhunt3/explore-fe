@@ -43,4 +43,8 @@ jobs:
           bucket: explorelikealocal-code
           dist-folder: ./dist
 
+#      - name: Output information
+#        run: |
+#          echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
+
       # invalidate cloudfront cache
