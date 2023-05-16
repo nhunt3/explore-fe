@@ -1,25 +1,22 @@
-.city-categories-image-container {
-    display: flex;
-    cursor: pointer;
-    /*margin: 0 10px 0 10px;*/
+.page-header {
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-.city-categories-image {
+.image-small {
     width: 100%;
-    /*border-radius: 10px;*/
-    align-items: center;
+    border-radius: 10px;
 }
 
-.city-categories-header-section {
-    background-color: black;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    /*margin: 25px 0 25px 0;*/
-}
-
-.city-categories-title {
+.section-header {
+    margin-top: 10px;
     margin-left: 10px;
-    color: white;
+    font-size: 18px;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}

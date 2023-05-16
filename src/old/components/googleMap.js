@@ -1,5 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react';
-import './map.css';
+// import React, {useEffect, useRef, useState} from 'react';
+// import './map.css';
 
 // function Map({center, zoom}) {
 //     // const ref = React.useRef(null);
@@ -38,4 +38,4 @@ import './map.css';
 //     return <div style={{height: '300px'}} ref={ref}></div>
 // };
 
-export default Map;
+// export default Map;

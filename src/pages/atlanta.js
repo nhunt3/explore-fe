@@ -1,28 +1,33 @@
 import React from 'react';
 import './atlanta.css';
-import { useHistory } from 'react-router';
-import {config} from '../config';
+import {config} from "../old/config";
 
-const Atlanta = () => {
-    const history = useHistory();
-
+export const Atlanta = () => {
     return (
-        <div>
-            <div className="city-categories-header-section">
-                <h1 className="city-categories-title">Top Spots in Atlanta</h1>
+        <>
+            <div className='page-header'>
+                Atlanta
             </div>
-            <div className="city-categories-image-container" onClick={() => history.push('/atlanta/top_spots_in_atlanta')}>
-                <img className="city-categories-image" src={`${config.s3baseUrl}Eastside_Trail.jpg`} />
+            <div className='section-container'>
+                <div>
+                    <img className='image-small' src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`} />
+                    <div className='section-header'>
+                        Hang Out
+                    </div>
+                </div>
+                <div>
+                    <img className='image-small' src={`${config.s3baseUrl}work remotely/cold brew bar - inside looking outside.jpg`} />
+                    <div className='section-header'>
+                        Work Remotely
+                    </div>
+                </div>
+                <div>
+                    <img className='image-small' src={`${config.s3baseUrl}nightlife/flight club darts.jpg`} />
+                    <div className='section-header'>
+                        Nightlife
+                    </div>
+                </div>
             </div>
-
-            <div className="city-categories-header-section">
-                <h1 className="city-categories-title">Coming Soon to ATL</h1>
-            </div>
-            <div className="city-categories-image-container" onClick={() => history.push('/atlanta/coming_soon_to_atlanta')}>
-                <img className="city-categories-image" src={`${config.s3baseUrl}Fourth_Ward_Megaproject_1.jpg`} />
-            </div>
-        </div>
+        </>
     );
 };
-
-export default Atlanta;
