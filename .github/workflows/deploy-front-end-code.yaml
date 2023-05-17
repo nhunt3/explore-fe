@@ -46,7 +46,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          aws cloudfront create-invalidation --distribution-id EML7OQC7NN0RF --paths "/*"
+          aws cloudfront create-invalidation --distribution-id EML7OQC7NN0RF --paths "/*" --region us-east-2
 
 #      - name: Output information
 #        run: |
