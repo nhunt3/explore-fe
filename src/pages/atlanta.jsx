@@ -9,7 +9,9 @@ export const Atlanta = () => {
                 Atlanta
             </div>
             <div className='section-container'>
-                <div>
+            {/*    <div className='item1'>*/}
+            {/*    </div>*/}
+                <div className='item'>
                     <img className='image-small' alt='beltline' src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`} />
                     <div className='section-header'>
                         Hang Out
@@ -21,7 +23,7 @@ export const Atlanta = () => {
                         Work Remotely
                     </div>
                 </div>
-                <div>
+            <div className='item'>
                     <img className='image-small' alt='flight club darts' src={`${config.s3baseUrl}nightlife/flight club darts.jpg`} />
                     <div className='section-header'>
                         Nightlife

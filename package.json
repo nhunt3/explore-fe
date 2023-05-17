@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "host": "vite --host"
   },
   "browserslist": [
     ">0.2%",

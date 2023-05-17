@@ -1,7 +1,6 @@
 .page-header {
     font-size: 32px;
-    margin-bottom: 30px;
-    color: grey;
+    padding: 10px 0 10px 20px;
 }
 
 .image-small {
@@ -12,12 +11,19 @@
 .section-header {
     margin-top: 10px;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 50px;
+@media (min-width: 800px) {
+    .section-header {
+        font-size: 22px;
+    }
+}
+
+.section-container > div {
+    padding: 20px 10px 10px 10px;
+}
+
+.section-container > div:nth-child(odd) {
+    background-color: #dfdfdf;
 }
