@@ -1,6 +1,7 @@
 import React from 'react';
 import './workRemotely.css';
 import { HorizontallyScrollingImages } from '../components/horizontallyScrollingImages';
+import { Header } from '../components/header';
 
 const coldBrewBarImages = [
     'work remotely/cold brew bar - inside looking outside.jpg',
@@ -26,9 +27,7 @@ const littleTartImages = [
 export const WorkRemotely = () => {
     return (
         <>
-            <div className='page-header'>
-                Work Remotely
-            </div>
+            <Header title='Work Remotely' />
 
             <div className='section-container'>
                 <div className='item'>

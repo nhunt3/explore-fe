@@ -1,0 +1,14 @@
+.page-header {
+    font-size: 32px;
+}
+
+.house {
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px calc(var(--app-left-padding) + 10px) 20px calc(var(--app-left-padding) + 10px);
+}

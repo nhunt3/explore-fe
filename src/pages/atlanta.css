@@ -10,11 +10,6 @@
     }
 }
 
-.page-header {
-    font-size: 32px;
-    padding: 20px 0 20px calc(var(--app-left-padding) + 10px);
-}
-
 .image-small {
     width: 100%;
     border-radius: 10px;

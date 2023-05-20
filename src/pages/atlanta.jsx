@@ -2,15 +2,15 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './atlanta.css';
 import { config } from '../config';
+import { Header } from "../components/header";
 
 export const Atlanta = () => {
     const history = useHistory();
 
     return (
         <>
-            <div className='page-header'>
-                Atlanta
-            </div>
+            <Header title='Atlanta' />
+
             <div className='section-container'>
                 <div className='item'>
                     <img className='image-small' alt='beltline' src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`} />
