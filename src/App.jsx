@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Atlanta } from './pages/atlanta';
+import { WorkRemotely } from './pages/workRemotely';
 import './app.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
             <Switch>
                 <div className='app'>
                     <Route path='/' exact component={Atlanta} />
+                    <Route path='/work-remotely' exact component={WorkRemotely} />
                     {/*<Route path='/about' component={About} />*/}
                     {/*<Route*/}
                     {/*    path='/atlanta/top_spots_in_atlanta/eastside_trail'*/}

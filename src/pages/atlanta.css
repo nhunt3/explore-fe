@@ -1,6 +1,18 @@
+:root {
+    --app-left-padding: 10px;
+    --app-right-padding: 10px;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --app-left-padding: 50px;
+        --app-right-padding: 50px;
+    }
+}
+
 .page-header {
     font-size: 32px;
-    padding: 10px 0 10px 20px;
+    padding: 20px 0 20px calc(var(--app-left-padding) + 10px);
 }
 
 .image-small {
@@ -21,7 +33,8 @@
 }
 
 .section-container > div {
-    padding: 20px 10px 10px 10px;
+    cursor: pointer;
+    padding: 30px var(--app-right-padding) 20px var(--app-left-padding);
 }
 
 .section-container > div:nth-child(odd) {
