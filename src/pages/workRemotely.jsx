@@ -30,7 +30,7 @@ export const WorkRemotely = () => {
             <Header title='Work Remotely' />
 
             <div className='section-container'>
-                <div className='item'>
+                <div>
                     <HorizontallyScrollingImages arrayOfImages={coldBrewBarImages} />
                     <div className='section-header'>
                         Cold Brew Bar
@@ -42,7 +42,7 @@ export const WorkRemotely = () => {
                         East Pole (Armour Yards)
                     </div>
                 </div>
-                <div className='item'>
+                <div>
                     <HorizontallyScrollingImages arrayOfImages={littleTartImages} />
                     <div className='section-header'>
                         Little Tart Bakery (Memorial Drive)

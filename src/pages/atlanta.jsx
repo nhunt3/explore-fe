@@ -12,17 +12,6 @@ export const Atlanta = () => {
             <Header title='Atlanta' />
 
             <div className='section-container'>
-                <div className='item'>
-                    <img
-                        // loading="lazy"
-                        className='image-small'
-                        alt='beltline'
-                        src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`}
-                    />
-                    <div className='section-header'>
-                        Hang Out
-                    </div>
-                </div>
                 <div onClick={() => history.push('/work-remotely')}>
                     <img
                         // loading="lazy"
@@ -34,7 +23,18 @@ export const Atlanta = () => {
                         Work Remotely
                     </div>
                 </div>
-                <div className='item'>
+                <div>
+                    <img
+                        // loading="lazy"
+                        className='image-small'
+                        alt='beltline'
+                        src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`}
+                    />
+                    <div className='section-header'>
+                        Hang Out (Coming soon)
+                    </div>
+                </div>
+                <div>
                     <img
                         // loading="lazy"
                         className='image-small'
@@ -42,7 +42,7 @@ export const Atlanta = () => {
                         src={`${config.s3baseUrl}nightlife/flight club darts.jpg`}
                     />
                     <div className='section-header'>
-                        Nightlife (coming soon)
+                        Nightlife (Coming soon)
                     </div>
                 </div>
             </div>
