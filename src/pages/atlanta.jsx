@@ -14,7 +14,7 @@ export const Atlanta = () => {
             <div className='section-container'>
                 <div className='item'>
                     <img
-                        loading="lazy"
+                        // loading="lazy"
                         className='image-small'
                         alt='beltline'
                         src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`}
@@ -25,7 +25,7 @@ export const Atlanta = () => {
                 </div>
                 <div onClick={() => history.push('/work-remotely')}>
                     <img
-                        loading="lazy"
+                        // loading="lazy"
                         className='image-small'
                         alt='cold brew bar'
                         src={`${config.s3baseUrl}work remotely/cold brew bar - inside looking outside.jpg`}
@@ -36,7 +36,7 @@ export const Atlanta = () => {
                 </div>
                 <div className='item'>
                     <img
-                        loading="lazy"
+                        // loading="lazy"
                         className='image-small'
                         alt='flight club darts'
                         src={`${config.s3baseUrl}nightlife/flight club darts.jpg`}
