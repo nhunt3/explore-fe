@@ -1,18 +1,18 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './atlanta.css';
+import { Header } from '../components/header';
 import { config } from '../config';
-import { Header } from "../components/header";
 
 export const Atlanta = () => {
-    const history = useHistory();
+    const navigate = useNavigate();
 
     return (
         <>
             <Header title='Atlanta' />
 
             <div className='section-container'>
-                <div onClick={() => history.push('/work-remotely')}>
+                <div onClick={() => navigate('/work-remotely')}>
                     <img
                         // loading="lazy"
                         className='image-small'

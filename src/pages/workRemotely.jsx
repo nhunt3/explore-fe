@@ -24,6 +24,11 @@ const littleTartImages = [
     'work remotely/Little Tart Bakery - food - 1.jpg'
 ];
 
+const dancingGoatsImages = [
+    'work remotely/dancing goats - pcm - outside - 1.jpg',
+    'work remotely/dancing goats - pcm - inside - 1.jpg'
+];
+
 export const WorkRemotely = () => {
     return (
         <>
@@ -46,6 +51,12 @@ export const WorkRemotely = () => {
                     <HorizontallyScrollingImages arrayOfImages={littleTartImages} />
                     <div className='section-header'>
                         Little Tart Bakery (Memorial Drive)
+                    </div>
+                </div>
+                <div>
+                    <HorizontallyScrollingImages arrayOfImages={dancingGoatsImages} />
+                    <div className='section-header'>
+                        Dancing Goats (PCM)
                     </div>
                 </div>
             </div>
