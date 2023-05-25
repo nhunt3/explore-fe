@@ -29,6 +29,21 @@ const dancingGoatsImages = [
     'work remotely/dancing goats - pcm - inside - 1.jpg'
 ];
 
+const costaCoffeeImages = [
+    'work remotely/costa coffee - 1.jpg',
+    'work remotely/costa coffee - 2.jpg',
+    'work remotely/costa coffee - 3.jpg'
+];
+
+const spillerParkImages = [
+    'work remotely/spiller park - 1.jpg',
+    'work remotely/spiller park - 2.jpg',
+    'work remotely/spiller park - 3.jpg',
+    'work remotely/spiller park - 4.jpg',
+    'work remotely/spiller park - 5.jpg',
+    'work remotely/spiller park - 6.jpg'
+];
+
 export const WorkRemotely = () => {
     return (
         <>
@@ -44,19 +59,31 @@ export const WorkRemotely = () => {
                 <div>
                     <HorizontallyScrollingImages arrayOfImages={eastPoleImages} />
                     <div className='section-header'>
-                        East Pole (Armour Yards)
+                        East Pole - Armour Yards
                     </div>
                 </div>
                 <div>
                     <HorizontallyScrollingImages arrayOfImages={littleTartImages} />
                     <div className='section-header'>
-                        Little Tart Bakery (Memorial Drive)
+                        Little Tart Bakery - Memorial Drive
                     </div>
                 </div>
                 <div>
                     <HorizontallyScrollingImages arrayOfImages={dancingGoatsImages} />
                     <div className='section-header'>
-                        Dancing Goats (PCM)
+                        Dancing Goats - Ponce City Market
+                    </div>
+                </div>
+                <div>
+                    <HorizontallyScrollingImages arrayOfImages={costaCoffeeImages} />
+                    <div className='section-header'>
+                        Costa Coffee - Midtown
+                    </div>
+                </div>
+                <div>
+                    <HorizontallyScrollingImages arrayOfImages={spillerParkImages} />
+                    <div className='section-header'>
+                        Spiller Park - Toco Hills
                     </div>
                 </div>
             </div>
