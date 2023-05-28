@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { fetchAtlantaData } from './store/index';
 import { Atlanta } from './pages/atlanta';
 import { WorkRemotely } from './pages/workRemotely';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -10,6 +13,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(fetchAtlantaData());
+    }, [])
+
     return (
         <div className='app'>
             <RouterProvider router={router} />

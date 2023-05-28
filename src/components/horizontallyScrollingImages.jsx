@@ -18,6 +18,7 @@ export class HorizontallyScrollingImages extends React.Component {
                         return (
                             <img
                                 // loading="lazy"
+                                key={i}
                                 className='image-scrollshow'
                                 src={`${config.s3baseUrl}${this.state.arrayOfImages[i]}`}
                             />

@@ -1,50 +1,42 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 import './atlanta.css';
 import { Header } from '../components/header';
 import { config } from '../config';
 
+const navigateSafe = (navigate, route) => {
+    if (route) {
+        navigate(route)
+    }
+};
+
 export const Atlanta = () => {
     const navigate = useNavigate();
+    const atlanta = useSelector(state => state.atlanta);
+    if (!atlanta) return;
 
     return (
         <>
-            <Header title='Atlanta' />
+            <Header title={atlanta.city} />
 
             <div className='section-container'>
-                <div onClick={() => navigate('/work-remotely')}>
-                    <img
-                        // loading="lazy"
-                        className='image-small'
-                        alt='cold brew bar'
-                        src={`${config.s3baseUrl}work remotely/cold brew bar - inside looking outside.jpg`}
-                    />
-                    <div className='section-header'>
-                        Work Remotely
-                    </div>
-                </div>
-                <div>
-                    <img
-                        // loading="lazy"
-                        className='image-small'
-                        alt='beltline'
-                        src={`${config.s3baseUrl}hang out/Eastside_Trail.jpg`}
-                    />
-                    <div className='section-header'>
-                        Hang Out (Coming soon)
-                    </div>
-                </div>
-                <div>
-                    <img
-                        // loading="lazy"
-                        className='image-small'
-                        alt='flight club darts'
-                        src={`${config.s3baseUrl}nightlife/flight club darts.jpg`}
-                    />
-                    <div className='section-header'>
-                        Nightlife (Coming soon)
-                    </div>
-                </div>
+                {atlanta['things to do'].map((thingToDo) => {
+                    return (
+                        <div key={thingToDo.title} onClick={() => navigateSafe(navigate, thingToDo.route)}>
+                            <img
+                                // loading="lazy"
+                                className='image-small'
+                                alt='cold brew bar'
+                                src={`${config.s3baseUrl}${thingToDo.image}`}
+                            />
+                            <div className='section-header'>
+                                {thingToDo.title}
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </>
     );
