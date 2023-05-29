@@ -6,6 +6,7 @@
 .image-scrollshow {
     width: 85%;
     border-radius: 10px;
+    max-height: 90vh; /* for rotating your phone sideways */
 }
 
 .image-scrollshow:not(:first-child) {
