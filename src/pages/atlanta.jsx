@@ -26,9 +26,8 @@ export const Atlanta = () => {
                     return (
                         <div key={thingToDo.title} onClick={() => navigateSafe(navigate, thingToDo.route)}>
                             <img
-                                // loading="lazy"
                                 className='image-small'
-                                alt='cold brew bar'
+                                alt={thingToDo.title}
                                 src={`${config.s3baseUrl}${thingToDo.image}`}
                             />
                             <div className='section-header'>

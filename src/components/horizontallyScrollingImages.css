@@ -1,12 +1,13 @@
 .scroll-container {
     overflow: auto;
     white-space: nowrap;
+    /*display: flex;*/
 }
 
 .image-scrollshow {
     max-width: 85%;
-    max-height: 90vh; /* for rotating your phone sideways */
     border-radius: 10px;
+    max-height: 85vh; /* for rotating your phone sideways */
 }
 
 .image-scrollshow:not(:first-child) {
@@ -16,3 +17,18 @@
 .image-scrollshow:not(:last-child) {
     margin-right: 10px;
 }
+
+svg {
+    width: 90%;
+    height: 90%;
+    max-width: 85%;
+    max-height: 85vh; /* for rotating your phone sideways */
+    /*display: block;*/
+}
+
+/*rect {*/
+/*    width: 90%;*/
+/*    height: 90%;*/
+/*}*/
+
+

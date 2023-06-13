@@ -24,7 +24,6 @@ export const atlantaActions = atlantaSlice.actions;
 export const fetchAtlantaData = () => {
   return async (dispatch) => {
     const response = await axios.get(getBaseUrl());
-    console.log('nick - environment - ', import.meta.env);
     dispatch(atlantaActions.setInitialState(response.data));
   }
 };
