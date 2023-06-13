@@ -21,7 +21,7 @@ export const WorkRemotely = () => {
                     };
                 });
 
-                // createObserver(svgs, '0% 0% 40% 0%', null, lazyImages);
+                createObserver(svgs, '0% 0% 40% 0%', null, lazyImages);
                 setSvgsLoaded(true);
             }
         }

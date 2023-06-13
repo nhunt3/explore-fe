@@ -20,8 +20,8 @@ export class HorizontallyScrollingImages extends React.Component {
                             <>
                                 <img
                                     className='image-scrollshow hidden'
-                                    // data-src={`${config.s3baseUrl}${this.state.arrayOfImages[i]}`}
-                                    src={`${config.s3baseUrl}${this.state.arrayOfImages[i]}`}
+                                    data-src={`${config.s3baseUrl}${this.state.arrayOfImages[i]}`}
+                                    // src={`${config.s3baseUrl}${this.state.arrayOfImages[i]}`}
                                 />
                                 <svg width='4032' height='3024' className='mySvg'>
                                     <rect x="0" y="0" width='4032' height="3024" fill="none" />
