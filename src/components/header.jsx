@@ -12,7 +12,7 @@ export const Header = (props) => {
                     {props.title}
                 </div>
                 {/*<div className='house' onClick={() => navigate('/')}>*/}
-                <i className='fa-solid fa-house fa-xl' style={{color: '#616161'}} />
+                <i className='fa-solid fa-house fa-xl house' style={{color: '#616161'}} />
                 {/*</div>*/}
             </div>
         </>
