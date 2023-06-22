@@ -5,6 +5,9 @@
 .house {
     cursor: pointer;
     padding-top: 2px;
+}
+
+.house-image {
     width: auto;
 }
 
