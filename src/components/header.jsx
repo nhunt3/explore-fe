@@ -11,9 +11,9 @@ export const Header = (props) => {
                 <div className='page-header'>
                     {props.title}
                 </div>
-                <div className='house' onClick={() => navigate('/')}>
-                    <i className='fa-solid fa-house fa-xl' style={{color: '#616161'}} />
-                </div>
+                {/*<div className='house' onClick={() => navigate('/')}>*/}
+                <i className='fa-solid fa-house fa-xl' style={{color: '#616161'}} />
+                {/*</div>*/}
             </div>
         </>
     );
