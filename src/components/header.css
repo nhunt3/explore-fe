@@ -5,7 +5,7 @@
 .house {
     cursor: pointer;
     padding-top: 2px;
-    width: auto;
+    width: fit-content;
 }
 
 .header-container {
