@@ -9,10 +9,13 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-58VSNLEK5M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
-      gtag('config', 'G-58VSNLEK5M', {
-        'user_id': '123'
+      gtag('config', 'G-58VSNLEK5M');
+      dataLayer.push({
+        'user_id': 'USER_ID'
       });
     </script>
   </head>
