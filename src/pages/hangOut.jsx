@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import './workRemotely.css';
+import './hangOut.css';
 import { HorizontallyScrollingImages } from '../components/horizontallyScrollingImages';
 import { Header } from '../components/header';
 import { createObserver } from '../utils/observer';
 
-export const WorkRemotely = () => {
+export const HangOut = () => {
     const [svgsLoaded, setSvgsLoaded] = useState(false);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ export const WorkRemotely = () => {
         }
     })
 
-    const thingToDo = useSelector(state => state.atlanta?.['things to do'].filter(thingToDo => thingToDo.title === 'Work Remotely')[0]);
+    const thingToDo = useSelector(state => state.atlanta?.['things to do'].filter(thingToDo => thingToDo.title === 'Hang Out')[0]);
     if (!thingToDo) return;
 
     return (

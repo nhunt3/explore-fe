@@ -1,0 +1,13 @@
+.mySvg {
+    transform: translate(-40vw, 0);
+    /*margin-left: -40vw;*/
+    /*margin-right: -30vw;*/
+}
+
+.gone {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
