@@ -42,6 +42,47 @@ export const WorkRemotely = () => {
                             <div className='section-header'>
                                 {spot.title}
                             </div>
+                            <div className="info">
+                                {
+                                    spot['wifi networks'] && (
+                                        <div className="wifi">
+                                            <div>
+                                                <div>Network</div>
+                                                {
+                                                    spot['wifi networks'].map(network => {
+                                                        return (
+                                                            <div className="more-info">{network['network name']}</div>
+                                                        );
+                                                    })
+                                                }
+                                            </div>
+                                            <div>
+                                                <div>Speed</div>
+                                                {
+                                                    spot['wifi networks'].map(network => {
+                                                        return (
+                                                            <div className="more-info">{network['average network speed']}</div>
+                                                    );
+                                                    })
+                                                }
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                            </div>
+                            <div className="info">
+                                {
+                                    spot.outlets && (
+                                        <>
+                                            <div>Outlets</div>
+                                            <div className="more-info">
+                                                <div>Indoors: {spot.outlets.indoors}</div>
+                                                {spot.outlets.outdoors && <div>Outdoors: {spot.outlets.outdoors}</div>}
+                                            </div>
+                                        </>
+                                    )
+                                }
+                            </div>
                         </div>
                     )
                 })}

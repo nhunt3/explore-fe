@@ -11,3 +11,30 @@
 .hidden {
     visibility: hidden;
 }
+
+.info {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 12px;
+}
+
+@media (min-width: 800px) {
+    .info {
+        font-size: 14px;
+    }
+}
+
+.more-info {
+    margin-left: 10px;
+}
+
+.wifi {
+    display: flex;
+    column-gap: 20px;
+}
+
+@media (min-width: 800px) {
+    .wifi {
+        column-gap: 50px;
+    }
+}
