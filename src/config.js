@@ -4,9 +4,9 @@ export const config = {
 };
 
 export const getBaseUrl = () => {
-    if (import.meta.env.DEV) {
-        return 'http://localhost:3001';
-    } else {
+    // if (import.meta.env.DEV) {
+    //     return 'http://localhost:3001';
+    // } else {
         return 'https://h4y3acvn2k.execute-api.us-east-1.amazonaws.com/prod/explore';
-    }
+    // }
 };

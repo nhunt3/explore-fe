@@ -62,7 +62,7 @@ export const WorkRemotely = () => {
                                                     spot['wifi networks'].map(network => {
                                                         return (
                                                             <div className="more-info">{network['average network speed']}</div>
-                                                    );
+                                                        );
                                                     })
                                                 }
                                             </div>
@@ -84,7 +84,7 @@ export const WorkRemotely = () => {
                                 }
                             </div>
                         </div>
-                    )
+                    );
                 })}
             </div>
         </>

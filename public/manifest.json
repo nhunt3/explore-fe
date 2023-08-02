@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Top Spots",
+  "name": "Best places to go in Atlanta",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,5 +1,5 @@
-import {config} from '../config';
-import React from "react";
+import { config } from '../config';
+import React from 'react';
 import './slideshow.css';
 
 export class Slideshow extends React.Component {

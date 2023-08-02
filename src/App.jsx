@@ -6,6 +6,7 @@ import { Atlanta } from './pages/atlanta';
 import { WorkRemotely } from './pages/workRemotely';
 import { HangOut } from './pages/hangOut';
 import { Test } from './pages/test';
+import Map from './pages/map';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './app.css';
 
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
     {path: '/', element: <Atlanta />},
     {path: '/work-remotely', element: <WorkRemotely />},
     {path: '/hang-out', element: <HangOut />},
-    {path: '/test', element: <Test />}
+    {path: '/test', element: <Test />},
+    {path: '/map', element: <Map />}
 ]);
 
 function App() {
