@@ -1,0 +1,21 @@
+#map {
+    height: calc(100vh - (100vw * .85));
+}
+
+.image-swiper-container {
+    padding: 15px 0 0 0;
+}
+
+.image-swiper {
+    width: 90%;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-swiper-title {
+    font-size: 22px;
+    text-align: center;
+    padding: 12px 0 15px 0;
+}

@@ -6,7 +6,7 @@ import { Atlanta } from './pages/atlanta';
 import { WorkRemotely } from './pages/workRemotely';
 import { HangOut } from './pages/hangOut';
 import { Test } from './pages/test';
-import Map from './pages/map';
+import Map from './pages/map-single';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './app.css';
 

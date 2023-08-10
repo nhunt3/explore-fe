@@ -1,0 +1,30 @@
+#map {
+    height: calc(100vh - (100vw * .75));
+}
+
+.slide-container-outer {
+    overflow-x: hidden;
+    padding: 32px 0 27px 0;
+}
+
+.slide-container {
+    display: flex;
+    gap: 40px;
+    padding-left: 40px;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: calc(100% - 80px);
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide-title {
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}

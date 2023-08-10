@@ -1,5 +1,5 @@
 import React from 'react';
-import './map.css';
+import './map-single.css';
 import { connect } from 'react-redux';
 import { config } from '../config';
 
@@ -92,6 +92,7 @@ class Map extends React.Component {
 
     render() {
         const url = this.props.spots ? `${config.s3baseUrl}${this.props.spots[this.state.currentSlide].images[0]}` : '';
+        const title = this.props.spots ? `${this.props.spots[this.state.currentSlide].title.split('-')[0].trim()}` : '';
 
         return (
             <>
@@ -103,6 +104,7 @@ class Map extends React.Component {
                         className='image-swiper'
                         src={url}
                     />
+                    <div className="image-swiper-title">{title}</div>
                 </div>
             </>
         );
