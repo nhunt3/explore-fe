@@ -1,9 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './header.css';
 
 export const Header = (props) => {
     const navigate = useNavigate();
+    const location = useLocation();
+    const currentRoute = location.pathname;
 
     return (
         <>
@@ -11,8 +13,16 @@ export const Header = (props) => {
                 <div className='page-header'>
                     {props.title}
                 </div>
-                <div className='house' onClick={() => navigate('/')}>
-                    <i className='fa-solid fa-house fa-xl house-image' style={{color: '#616161'}} />
+                <div>
+                    {
+                        currentRoute === '/work-remotely' &&
+                        <div className='icon map' onClick={() => navigate('/map')}>
+                            <i className='fa-solid fa-map fa-xl icon-image' style={{color: '#616161'}} />
+                        </div>
+                    }
+                    <div className='icon' onClick={() => navigate('/')}>
+                        <i className='fa-solid fa-house fa-xl icon-image' style={{color: '#616161'}} />
+                    </div>
                 </div>
             </div>
         </>

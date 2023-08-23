@@ -2,12 +2,17 @@
     font-size: 32px;
 }
 
-.house {
+.icon {
     cursor: pointer;
     padding-top: 2px;
+    display: inline;
 }
 
-.house-image {
+.map {
+    margin-right: 10px;
+}
+
+.icon-image {
     width: auto;
 }
 

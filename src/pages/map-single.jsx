@@ -2,6 +2,7 @@ import React from 'react';
 import './map-single.css';
 import { connect } from 'react-redux';
 import { config } from '../config';
+import { Link } from 'react-router-dom';
 
 let touchStartX = 0;
 let touchEndX = 0;
@@ -58,7 +59,8 @@ class Map extends React.Component {
         map = new Map(document.getElementById('map'), {
             center: { lat: 33.78, lng: -84.37 },
             zoom: 11,
-            mapTypeControl: false
+            mapTypeControl: false,
+            fullscreenControl: false
         });
 
         this.renderMarkers();
@@ -94,8 +96,16 @@ class Map extends React.Component {
         const url = this.props.spots ? `${config.s3baseUrl}${this.props.spots[this.state.currentSlide].images[0]}` : '';
         const title = this.props.spots ? `${this.props.spots[this.state.currentSlide].title.split('-')[0].trim()}` : '';
 
+        // bad idea. oh well.
+        this.initMap();
+
         return (
             <>
+                <div className='close-x'>
+                    <Link to='/work-remotely' >
+                        <i className='fa-solid fa-xmark fa-2xl' style={{color: '#616161'}} />
+                    </Link>
+                </div>
                 <div id="map"></div>
                 <div className="image-swiper-container">
                     <img
