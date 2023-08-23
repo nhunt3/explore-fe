@@ -14,12 +14,12 @@ export const Header = (props) => {
                     {props.title}
                 </div>
                 <div>
-                    {
-                        currentRoute === '/work-remotely' &&
-                        <div className='icon map' onClick={() => navigate('/map')}>
-                            <i className='fa-solid fa-map fa-xl icon-image' style={{color: '#616161'}} />
-                        </div>
-                    }
+                    {/*{*/}
+                    {/*    currentRoute === '/work-remotely' &&*/}
+                    {/*    <div className='icon map' onClick={() => navigate('/map')}>*/}
+                    {/*        <i className='fa-solid fa-map fa-xl icon-image' style={{color: '#616161'}} />*/}
+                    {/*    </div>*/}
+                    {/*}*/}
                     <div className='icon' onClick={() => navigate('/')}>
                         <i className='fa-solid fa-house fa-xl icon-image' style={{color: '#616161'}} />
                     </div>
