@@ -101,11 +101,9 @@ class Map extends React.Component {
 
         return (
             <>
-                <div className='close-x'>
-                    <Link to='/work-remotely' >
-                        <i className='fa-solid fa-xmark fa-2xl' style={{color: '#616161'}} />
-                    </Link>
-                </div>
+                <Link to='/work-remotely'>
+                    <i className='map-x fa-solid fa-xmark fa-2xl' style={{color: '#616161'}} />
+                </Link>
                 <div id="map"></div>
                 <div className="image-swiper-container">
                     <img
