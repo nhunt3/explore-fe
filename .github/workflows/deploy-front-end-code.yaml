@@ -21,7 +21,9 @@ jobs:
         run: |
           git config --global user.email "nhunt11@gmail.com"
           git config --global user.name "Nick Hunt, via GitHub Actions"
+          git status
           npm version patch
+          git status
           git commit -am "bumping the version, via GitHub Actions"
           git push
 
