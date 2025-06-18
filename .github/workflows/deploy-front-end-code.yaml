@@ -18,7 +18,10 @@ jobs:
           node-version: '18'
 
       - name: Version Bump
-        run: npm version patch
+        run: |
+          git config --global user.email "nhunt11@gmail.com"
+          git config --global user.name "Nick Hunt, via GitHub Actions"
+          npm version patch 
 
       - name: Cache dependencies
         id: cache
