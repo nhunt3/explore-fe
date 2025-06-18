@@ -21,7 +21,9 @@ jobs:
         run: |
           git config --global user.email "nhunt11@gmail.com"
           git config --global user.name "Nick Hunt, via GitHub Actions"
-          npm version patch 
+          npm version patch
+          git commit -am "bumping the version, via GitHub Actions"
+          git push
 
       - name: Cache dependencies
         id: cache
