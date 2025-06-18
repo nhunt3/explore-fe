@@ -24,7 +24,6 @@ jobs:
           git status
           npm version patch
           git status
-          git commit -am "bumping the version, via GitHub Actions"
           git push
 
       - name: Cache dependencies
