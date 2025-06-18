@@ -21,9 +21,7 @@ jobs:
         run: |
           git config --global user.email "nhunt11@gmail.com"
           git config --global user.name "Nick Hunt, via GitHub Actions"
-          git status
           npm version patch
-          git status
           git push --follow-tags
 
       - name: Cache dependencies
