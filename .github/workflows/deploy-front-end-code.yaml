@@ -24,7 +24,7 @@ jobs:
           git status
           npm version patch
           git status
-          git push --tags
+          git push --follow-tags
 
       - name: Cache dependencies
         id: cache
